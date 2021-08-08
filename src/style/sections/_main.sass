@@ -1,0 +1,335 @@
+.main
+  background: linear-gradient(180deg, #F0EEEE 1%, rgba(255,255,255,0) 3%, #F0EEEE 5%),#929292
+
+.certificate
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../public/img/fon1.jpg") no-repeat
+  background-size: cover
+
+  &-background
+    background: #1e1b00
+
+  &__header
+    &1
+      display: block
+      text-align: center
+      padding: 55px 15% 0 15%
+    &2
+      text-align: center
+      width: 420px
+      padding-right: 40px
+
+  &__content
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding: 95px 220px 0 220px
+
+  &__wrapper-list
+    max-width: 47%
+
+  &__list
+    position: relative
+    list-style-type: none
+    font-weight: 500
+    font-size: 36px
+    color: #FFFFFF
+    padding: 0 0 20px 0
+    &::before
+      position: absolute
+      content: url("../../../public/img/list-style.png")
+      top: 0
+      left: -60px
+
+  &__link
+    position: absolute
+    display: block
+    right: 2%
+    top: 30%
+    width: 160px
+    text-align: center
+    color: white
+    &:hover
+      color: $yellow!important
+
+  &__crane
+    width: 160px
+
+  &__descryption
+    display: block
+    font-weight: normal
+    font-size: 22px
+    line-height: 26px
+    padding: 12px 0
+    width: 390px
+
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    padding-bottom: 45px
+
+.equipment
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../public/img/fon2.jpg") no-repeat
+  background-size: cover
+
+  &-background
+    background: #1e1b00
+
+  &__container
+    display: grid
+    grid-template: auto auto auto auto auto / 2fr 3fr 4fr
+    row-gap: 17px
+    padding: 60px 0 42px 40px
+
+  &__img
+    width: 200px
+    &:nth-child(1)
+      grid-row-start: 1
+      grid-column-start: 1
+      grid-row-end: 2
+      grid-column-end: 2
+    &:nth-child(2)
+      grid-row-start: 2
+      grid-column-start: 1
+      grid-row-end: 3
+      grid-column-end: 2
+    &:nth-child(3)
+      grid-row-start: 3
+      grid-column-start: 1
+      grid-row-end: 4
+      grid-column-end: 2
+    &:nth-child(4)
+      grid-row-start: 4
+      grid-column-start: 1
+      grid-row-end: 5
+      grid-column-end: 2
+
+  &__list
+    &-1
+      grid-row-start: 1
+      grid-column-start: 2
+      grid-row-end: 2
+      grid-column-end: 3
+      width: 375px
+      padding-top: 20px
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+    &-2
+      grid-row-start: 2
+      grid-column-start: 2
+      grid-row-end: 3
+      grid-column-end: 3
+      width: 375px
+      padding-top: 15px
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+    &-3
+      grid-row-start: 3
+      grid-column-start: 2
+      grid-row-end: 4
+      grid-column-end: 3
+      width: 375px
+      padding-top: 12px
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+    &-4
+      grid-row-start: 4
+      grid-column-start: 2
+      grid-row-end: 5
+      grid-column-end: 3
+      width: 375px
+      padding-top: 55px
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+    &-5
+      grid-row-start: 5
+      grid-column-start: 2
+      grid-row-end: 6
+      grid-column-end: 3
+      width: 375px
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+
+  &__header
+    &1
+      grid-row-start: 1
+      grid-column-start: 3
+      grid-row-end: 2
+      grid-column-end: 4
+      text-align: right
+      padding-right: 80px
+      max-width: 595px
+    &2
+      text-align: center
+      max-width: 560px
+      grid-row-start: 4
+      grid-column-start: 3
+      grid-row-end: 5
+      grid-column-end: 4
+
+.team
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../public/img/fon3.png")
+  background-position-x: center
+  background-size: cover
+  &-background
+    background: #1e1b00
+
+  &__container
+    padding: 20px 0 127px 0
+
+  &__header
+    text-align: right
+    padding: 0 75px 0 65%
+
+  &__wrapper
+    padding: 80px 390px
+
+  &__content
+    display: block
+    font-size: 26px
+    line-height: 36px
+    color: #fff
+    width: 694px
+    padding-bottom: 65px
+
+.clients
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../public/img/fon4.png")
+  padding: 20px 10px 8px 10px
+  &-background
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+
+  &__header
+    display: block
+    padding: 40px 0 0 75px
+
+  &__container
+    display: grid
+    grid-template: auto auto / 33% 41% 26%
+    gap: 46px 0
+    padding: 115px 0 87px 100px
+
+  &__img
+    &1
+      grid-row-start: 1
+      grid-column-start: 1
+      grid-row-end: 2
+      grid-column-end: 2
+      height: 260px
+    &2
+      grid-row-start: 1
+      grid-column-start: 2
+      grid-row-end: 2
+      grid-column-end: 3
+      height: 260px
+    &3
+      grid-row-start: 1
+      grid-column-start: 3
+      grid-row-end: 2
+      grid-column-end: 4
+      height: 260px
+
+  &__list
+    &1
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+      color: #FFFFFF
+      grid-row-start: 2
+      grid-column-start: 1
+      grid-row-end: 3
+      grid-column-end: 2
+      padding: 0 75px 0 20px
+    &2
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+      color: #FFFFFF
+      grid-row-start: 2
+      grid-column-start: 2
+      grid-row-end: 3
+      grid-column-end: 3
+      padding: 0 95px 0 20px
+    &3
+      font-size: 26px
+      line-height: 36px
+      text-align: center
+      color: #FFFFFF
+      grid-row-start: 2
+      grid-column-start: 3
+      grid-row-end: 3
+      grid-column-end: 4
+      padding-right: 110px
+
+.contactUs
+  display: flex
+  justify-content: space-between
+  background: linear-gradient(180deg, #8E8E8E 0%, rgba(255, 255, 255, 0) 100%), #F0EEEE
+  margin-top: -2px
+  &-background
+    background: linear-gradient(180deg, #8E8E8E 0%, rgba(255, 255, 255, 0) 100%), #F0EEEE
+
+  &__img
+    display: block
+    width: 500px
+    height: fit-content
+    padding-top: 100px
+  &__wrapper
+    padding-top: 100px
+    max-width: 40%
+  &__question
+    display: block
+    font-weight: bold
+    font-size: 48px
+    line-height: 66px
+    color: #000
+    padding-bottom: 95px
+  &__requisites
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__cityNum
+    display: inline-block
+    font-size: 28px
+    color: #000
+    margin-bottom: 10px
+  &__mobNum
+    display: inline-block
+    font-size: 22px
+    color: #000
+    margin-bottom: 40px
+  &__email
+    display: inline-block
+    font-size: 28px
+    color: #000
+  &__crane
+    display: inline-block
+    height: 291px
+    padding-right: 20px
+
+.layer1
+  background: linear-gradient(180deg, #929292 0%, rgba(255, 255, 255, 0) 100%), #F3D018
+  text-align: center
+  padding-bottom: 48px
+  &__img
+    width: 100px
+
+.layer2
+  background-color: #F3D018
+  text-align: center
+  padding-bottom: 48px
+  &__img
+    width: 100px
+
+.layer3
+  background: linear-gradient(180deg, #F3D018 0%, rgba(255, 255, 255, 0) 100%), #929292
+  text-align: center
+  padding-bottom: 48px
+  &-background
+    background: linear-gradient(180deg, #1e1b00, #908F8F)
+  &__img
+    width: 100px

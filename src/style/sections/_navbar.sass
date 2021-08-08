@@ -1,0 +1,64 @@
+.navbar
+
+  &__wrapper
+    position: relative
+    display: flex
+    border-radius: 0px 0px 0px 60px
+    background: #1E1E1E
+
+  &__crane
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    &-img
+      position: absolute
+      display: none
+      &-aboutUs
+        display: block
+        left: 3%
+        transition: all 0.3s
+      &-production
+        display: block
+        left: 23%
+        transition: all 0.3s
+      &-engeneering
+        display: block
+        left: 48%
+        transition: all 0.3s
+      &-contact
+        display: block
+        left: 64%
+        transition: all 0.3s
+
+  &__link
+    font-size: 20px
+    color: #fff
+    text-decoration: none
+    border-left: 2px solid #515151
+    padding: 20px 30px
+    cursor: pointer
+    transition: background-color 0.2s linear
+    &:hover
+      background-color: #515151
+    &:nth-child(1)
+      width: 140px
+      padding-left: 60px
+      border-left: none
+      border-radius: 0px 0px 0px 60px
+      text-align: center
+    &:nth-child(2)
+      width: 440px
+      text-align: center
+    &:nth-child(3)
+      width: 295px
+      text-align: center
+    &:nth-child(4)
+      width: 158px
+      text-align: center
+
+  &__menu
+    position: absolute
+    width: 100%
+    bottom: 0
+    display: none

@@ -1,0 +1,174 @@
+.contact
+
+  &__header
+    font-weight: bold
+    font-size: 56px
+    line-height: 66px
+    text-align: center
+    color: #000
+  &__container
+    display: flex
+    justify-content: start
+    align-items: start
+    padding: 75px 0
+
+  &__requisites
+    padding-left: 140px
+    width: 660px
+
+    &-wrapper
+      display: flex
+      justify-content: space-start
+      padding-bottom: 60px
+      align-items: center
+
+    &-img
+      display: block
+      padding-right: 42px
+
+    &-text
+      display: block
+      color: #000
+      font-size: 28px
+      line-height: 40px
+      max-width: 420px
+      &:hover
+        color: red
+      &M
+        display: inline-block
+        color: #000
+        font-size: 22px
+        &:hover
+          color: red
+
+  &__form
+    padding-left: 65px
+    color: #000
+
+    &-fieldset
+      border: 2px solid #000
+      border-radius: 5px
+    &-legend
+      display: block
+      font-weight: bold
+      font-size: 32px
+      margin: 0 auto
+      padding: 0 20px
+      max-width: 400px
+    &-info
+      display: grid
+      grid-template: 1fr 1fr 1fr / 1fr 4fr
+      gap: 15px 0
+      padding: 25px 20px 0 20px
+
+    &-label
+      position: relative
+      font-size: 18px
+      align-self: center
+      max-width: 75px
+    &-error
+      position: absolute
+      bottom: -24px
+      left: 98px
+      background-color: $yellow
+      width: 392px
+      text-align: center
+      border: 2px black solid
+      &::before
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        border: 10px solid rgba(0, 0, 0, 0)
+        border-bottom: 10px solid black
+        top: -22px
+        left: 48%
+    &-span
+      position: relative
+      display: block
+      font-size: 18px
+      padding: 25px 0 25px 0
+      max-width: 175px
+    &-input
+      width: 392px
+      height: 52px
+      border: 2px solid #000
+      background: inherit
+      padding: 0 28px
+
+    &-message
+      padding: 0 20px
+
+    &-textarea
+      display: block
+      resize: none
+      width: 100%
+      height: 150px
+      padding: 10px
+      border: 2px solid #000
+      background-color: inherit
+      &_error
+        position: absolute
+        bottom: -10px
+        left: 98px
+        background-color: $yellow
+        width: 392px
+        text-align: center
+        border: 2px black solid
+        &::before
+          content: ''
+          position: absolute
+          width: 0
+          height: 0
+          border: 10px solid rgba(0, 0, 0, 0)
+          border-top: 10px solid black
+          top: 22px
+          left: 48%
+
+    &-button
+      position: relative
+      padding: 28px 0
+
+    &-submit
+      display: block
+      margin: 0 auto
+      width: 200px
+      height: 64px
+      background: #000
+      color: white
+      font-weight: 700
+      border: none
+      border-radius: 5px
+      cursor: pointer
+      &:hover
+        color: $yellow
+      &-error
+        position: absolute
+        bottom: 0
+        left: 26%
+        background-color: red
+        width: 250px
+        text-align: center
+        border: 2px black solid
+        &::before
+          content: ''
+          position: absolute
+          width: 0
+          height: 0
+          border: 10px solid rgba(0, 0, 0, 0)
+          border-bottom: 10px solid black
+          top: -22px
+          left: 48%
+
+  &__location
+    text-align: center
+    &-text
+      display: block
+      font-weight: bold
+      font-size: 36px
+      color: #000
+      padding-bottom: 70px
+    &-map
+      width: 880px
+      height: 520px
+      box-shadow: 0 0 4px 0 black

@@ -1,0 +1,39 @@
+.accordion
+  width: 100%
+  margin: 2rem auto
+  &__item
+    float: right
+  &__menu
+    color: $yellow
+    z-index: 2
+  &__title
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    cursor: pointer
+    background-color: #1E1E1E
+    max-width: 100px
+    padding: 12px
+    border-radius: 10px 10px 0px 0px
+
+  &__title:hover
+    background-color: #1E1E1E
+
+  &__content
+    background: linear-gradient(180deg, #1E1E1E 0%, rgba(255, 255, 255, 0) 120%), gray
+    width: 100%
+    position: absolute
+    top: 40px
+    right: 0
+    text-align: right
+    padding: 20px 10px 10px 10px
+    z-index: 2
+    border-radius: 0 0 0 25px
+
+  &__link
+    display: block
+    color: white
+    padding: 7px
+    border-right: rgba(0, 0, 0, 0) 5px solid
+    &-active
+      border-right: #F8D418 5px solid

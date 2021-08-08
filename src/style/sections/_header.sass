@@ -1,0 +1,97 @@
+.header
+  background: linear-gradient(90deg, $yellow 50%, #1E1E1E 50%)
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    background: linear-gradient(90deg, $yellow 86%, #1E1E1E 86%)
+
+  &__logo
+    padding: 25px 0 00 63px
+    &-img
+      display: inline-block
+      width: 400px
+
+    &-phrase
+      display: block
+      font-size: 30px
+      line-height: 45px
+      text-align: center
+      color: #1E1E1E
+      width: 572px
+      padding-top: 40px
+
+  &__contacts
+    padding: 17px 0 0 30px
+    max-width: 275px
+    &-text
+      display: inline-block
+      font-size: 22px
+      color: #000
+      padding-top: 20px
+  &__wrapper-search
+    padding-top: 110px
+    background: inherit
+  &__form
+    &-search
+      position: relative
+      width: 100%
+      margin-right: auto
+    &-input
+      width: 100%
+      height: 42px
+      padding-left: 10px
+      border: 2px solid #000
+      border-radius: 5px
+      outline: none
+      background: #F9F0DA
+      color: #000
+    &-submit
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      width: 42px
+      height: 42px
+      border: none
+      background: #000
+      border-radius: 0 5px 5px 0
+      cursor: pointer
+      &::before
+        content: ''
+        background-image: url("../../../public/img/search.png")
+        background-size: cover
+        padding: 5px 14px 5px 15px
+
+  &__photo
+    position: relative
+    padding-right: 28px
+
+    &-crane
+      width: 346px
+      border-radius: 172.5px
+      margin-bottom: -4px
+    &-circle
+      position: absolute
+      left: -26px
+      top: 0
+      z-index: 2
+
+  &__lang
+    position: absolute
+    display: block
+    width: 40px
+    height: 40px
+    border-radius: 0 0 10px 10px
+    background-color: $color
+    right: 10px
+    top: 0
+    color: #000
+    font-size: 24px
+    padding: 6px 0 0 7px
+    text-decoration: underline
+    z-index: 3
+    cursor: pointer
+    &:hover
+      color: red
