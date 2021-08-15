@@ -52,8 +52,6 @@ export const Form = (props) => {
       setEmail('')
       setMessage('')
       setStatusText(sendForm.sendContactForm())
-      console.log(statusText)
-      // sendForm.sendContactForm()
     }
   }
 
