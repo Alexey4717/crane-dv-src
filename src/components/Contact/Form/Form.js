@@ -2,9 +2,10 @@ import React from 'react'
 import MaskInput from 'react-maskinput';
 import { FormattedMessage, useIntl } from 'react-intl'
 import { useState } from 'react'
-//import { sendForm } from '../../../api/api'
+import { sendForm } from '../../../api/api'
+import { LOCALES } from '../../../i18n/locales'
 
-export const Form = () => {
+export const Form = (props) => {
 
   const intl = useIntl()
 
@@ -18,6 +19,8 @@ export const Form = () => {
   const [emailHidden, setEmailHidden] = useState(true)
   const [messageHidden, setMessageHidden] = useState(true)
   const [formHidden, setFormHidden] = useState(true)
+  const [formSent, setFormSent] = useState(false)
+  const [statusText, setStatusText] = useState()
 
   function submitForm(evt) {
     const emailRegEx =
@@ -41,7 +44,15 @@ export const Form = () => {
       onBlurEmail()
       onBlurMessage()
     } else if (isFormValid) {
+      evt.preventDefault() // т.к. post-запрос симитирован, чтоб не возникала ошибка отменим отправку по умолчанию
       setFormHidden(true)
+      setFormSent(true)
+      setName('')
+      setPhone('')
+      setEmail('')
+      setMessage('')
+      setStatusText(sendForm.sendContactForm())
+      console.log(statusText)
       // sendForm.sendContactForm()
     }
   }
@@ -107,7 +118,7 @@ export const Form = () => {
   }
 
   return (
-    <form className="contact__form" /* onSubmit={sendForm.sendContactForm} */ method="post" id="form">
+    <form className="contact__form" /* onSubmit={sendForm.sendContactForm} */ method="post" id={"form"}>
       <fieldset className="contact__form-fieldset">
         <legend className="contact__form-legend">
           <FormattedMessage id='contact_form_legend' />
@@ -128,7 +139,8 @@ export const Form = () => {
           </label>
           <MaskInput className="contact__form-input" type="tel" id="phone" value={phone} onChange={handlePhoneChange} onBlur={onBlurPhone} placeholder={intl.formatMessage({
             id: "contact_form_placeholder_phone",
-          })} mask={'+7(000)000-00-00'} size={20} showMask maskChar="_" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required />
+          })} mask={'+7(000)000-00-00'} size={20} showMask maskChar="_" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required
+          />
           <label className="contact__form-label" htmlFor="email">
             E-mail
             {!emailHidden && <span className="contact__form-error"><FormattedMessage id='contact_form_error_email' /></span>}
@@ -152,6 +164,8 @@ export const Form = () => {
           {!formHidden && <span className="contact__form-submit-error"><FormattedMessage id='contact_form_error_form' /></span>}
         </div>
       </fieldset>
+      {formSent && props.currentLocale === LOCALES.RUSSIAN && <div className="contact__form-sent">{statusText.statusText}</div>}
+      {formSent && props.currentLocale === LOCALES.ENGLISH && <div className="contact__form-sent">{statusText.statusTextEn}</div>}
     </form>
   )
 }

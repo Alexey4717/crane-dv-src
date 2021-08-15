@@ -2,8 +2,8 @@ import { LOCALES } from '../../../i18n/locales'
 import { FormattedMessage } from 'react-intl'
 import React from 'react'
 
-export const Location = React.forwardRef((props, ref) => (
-  <div className="contact__location" id="location" ref={ref} >
+export const Location = React.forwardRef((props, locationRef) => (
+  <div className="contact__location" id="location" ref={locationRef} >
     <span className="contact__location-text">
       <FormattedMessage id='contact_location_text' />
     </span>

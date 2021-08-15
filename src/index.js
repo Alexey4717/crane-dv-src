@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './style/normalize.css'
 import './style/style.sass'
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 
 );

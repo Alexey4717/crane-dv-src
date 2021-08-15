@@ -25,6 +25,7 @@
     &-img
       display: block
       padding-right: 42px
+      cursor: pointer
 
     &-text
       display: block
@@ -32,6 +33,7 @@
       font-size: 28px
       line-height: 40px
       max-width: 420px
+      cursor: pointer
       &:hover
         color: red
       &M
@@ -44,6 +46,16 @@
   &__form
     padding-left: 65px
     color: #000
+    &-sent
+      position: fixed
+      top: 45px
+      right: 20px
+      background-color: #8dcf8d
+      height: 70px
+      border-radius: 10px
+      padding: 25px
+      z-index: 20
+      opacity: 0.8
 
     &-fieldset
       border: 2px solid #000
@@ -150,6 +162,7 @@
         width: 250px
         text-align: center
         border: 2px black solid
+        color: white
         &::before
           content: ''
           position: absolute
@@ -172,3 +185,6 @@
       width: 880px
       height: 520px
       box-shadow: 0 0 4px 0 black
+
+.red
+  border: 2px red solid

@@ -4,19 +4,19 @@ import { FormattedMessage } from 'react-intl'
 export const Navlist = (props) => (
   <>
 
-    <NavLink className={props.linkStyle} activeClassName={props.activeLinkStyle} to="/aboutus">
+    <NavLink to="/aboutus" className={props.linkStyle} activeClassName={props.activeLinkStyle}>
       <FormattedMessage id='navlist_about_us' />
     </NavLink>
 
-    <NavLink className={props.linkStyle} activeClassName={props.activeLinkStyle} to="/production">
+    <NavLink to="/production" className={props.linkStyle} activeClassName={props.activeLinkStyle}>
       <FormattedMessage id='navlist_production' />
     </NavLink>
 
-    <NavLink className={props.linkStyle} activeClassName={props.activeLinkStyle} to="/ingeneering">
+    <NavLink to="/ingeneering" className={props.linkStyle} activeClassName={props.activeLinkStyle}>
       <FormattedMessage id='navlist_engineering' />
     </NavLink>
 
-    <NavLink className={props.linkStyle} activeClassName={props.activeLinkStyle} to="/contact">
+    <NavLink to="/contact" className={props.linkStyle} activeClassName={props.activeLinkStyle}>
       <FormattedMessage id='navlist_contact' />
     </NavLink>
   </>

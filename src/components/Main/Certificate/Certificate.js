@@ -1,20 +1,7 @@
 import { HashLink as Link } from 'react-router-hash-link'
 import { FormattedMessage } from 'react-intl'
-import { useState } from 'react';
-
-const imgPath = process.env.PUBLIC_URL + '/img';
 
 export const Certificate = () => {
-
-  const [hoverMouse, setHoverMouse] = useState(false)
-
-  function enterMouse() {
-    setHoverMouse(true)
-  }
-
-  function leaveMouse() {
-    setHoverMouse(false)
-  }
 
   return (
     <section className="certificate section container">
@@ -69,9 +56,7 @@ export const Certificate = () => {
           </li>
         </ul>
 
-        <Link className="certificate__link" onMouseOver={() => enterMouse()} onMouseOut={() => leaveMouse()} to="/contact#form">
-          {!hoverMouse && <img className="certificate__crane" src={imgPath + '/crane-yellow.png'} alt="crane" />}
-          {hoverMouse && <img className="certificate__crane" src={imgPath + '/crane-red.png'} alt="crane" />}
+        <Link className="certificate__link" to="/contact#form">
           <FormattedMessage id='сertificate_request' />
         </Link>
       </div>

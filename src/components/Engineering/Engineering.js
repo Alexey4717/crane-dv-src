@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl'
 
 const imgPath = process.env.PUBLIC_URL + '/img';
 
-export const Ingeneering = (props) => {
+export const Engineering = (props) => {
 
   return (
     <div className="ingeneering container content">
@@ -74,7 +74,7 @@ export const Ingeneering = (props) => {
         </div>
         <img className="intro__img" src={imgPath + "/crane5.png"} alt="crane" />
       </div>
-      <GalleryContainer page={'ingeneering'} currentLocale={props.currentLocale} />
+      <GalleryContainer page={'engineering'} currentLocale={props.currentLocale} />
     </div>
   )
 }

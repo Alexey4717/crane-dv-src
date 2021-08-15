@@ -9,11 +9,11 @@ const imgPath = process.env.PUBLIC_URL + '/img';
 
 export const Contact = (props) => {
 
-  const ref = useRef()
+  const locationRef = useRef()
 
   function scrLoc() {
     window.scrollTo({
-      top: ref.current.offsetTop,
+      top: locationRef.current.offsetTop,
       behavior: 'smooth'
     });
   };
@@ -25,9 +25,9 @@ export const Contact = (props) => {
       </h2>
       <div className="contact__container">
         <Requisites phone={imgPath + "/phone.png"} mail={imgPath + "/mail.png"} address={imgPath + "/address.png"} scrLoc={scrLoc} />
-        <Form />
+        <Form currentLocale={props.currentLocale} />
       </div>
-      <Location ref={ref} currentLocale={props.currentLocale} />
+      <Location ref={locationRef} currentLocale={props.currentLocale} />
     </div>
   )
 }
