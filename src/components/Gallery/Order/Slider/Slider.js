@@ -17,7 +17,8 @@ export function Slider(props) {
         navigation={true}
         pagination={{ "clickable": true }}
         className="mySwiper"
-        loop={true}>
+        loop={true}
+      >
 
         {props.photos.map((ph, index) => {
           return <SwiperSlide key={index}>
@@ -28,6 +29,6 @@ export function Slider(props) {
         })}
 
       </Swiper>
-    </div>
+    </div >
   )
 }

@@ -1,0 +1,242 @@
+.equipment
+  &__container
+    display: -ms-grid
+    -ms-grid-columns: 2fr 17px 3fr 17px 4fr
+    -ms-grid-rows: auto 17px auto 17px auto 17px auto 17px auto
+  &__img
+    &:nth-child(1)
+      -ms-grid-column: 1
+      -ms-grid-row: 1
+    &:nth-child(2)
+      -ms-grid-column: 1
+      -ms-grid-row: 3
+    &:nth-child(3)
+      -ms-grid-column: 1
+      -ms-grid-row: 5
+    &:nth-child(4)
+      -ms-grid-column: 1
+      -ms-grid-row: 7
+  &__list
+    &-1
+      display: block
+      -ms-grid-column: 3
+      -ms-grid-row: 1
+    &-2
+      display: block
+      -ms-grid-column: 3
+      -ms-grid-row: 3
+    &-3
+      display: block
+      -ms-grid-column: 3
+      -ms-grid-row: 5
+    &-4
+      display: block
+      -ms-grid-column: 3
+      -ms-grid-row: 7
+    &-5
+      display: block
+      -ms-grid-column: 3
+      -ms-grid-row: 9
+  &__header
+    &1
+      -ms-grid-column: 5
+      -ms-grid-row: 1
+    &2
+      display: block
+      -ms-grid-column: 5
+      -ms-grid-row: 7
+
+.clients
+  &__container
+    display: -ms-grid
+    -ms-grid-columns: 33% 0 41% 0 26%
+    -ms-grid-rows: auto 46px auto
+  &__img
+    &1
+      -ms-grid-column: 1
+      -ms-grid-row: 1
+      width: 364px
+    &2
+      -ms-grid-column: 3
+      -ms-grid-row: 1
+      width: 462px
+    &3
+      -ms-grid-column: 5
+      -ms-grid-row: 1
+      width: 260px
+  &__list
+    &1
+      display: block
+      -ms-grid-column: 1
+      -ms-grid-row: 3
+    &2
+      display: block
+      -ms-grid-column: 3
+      -ms-grid-row: 3
+    &3
+      display: block
+      -ms-grid-column: 5
+      -ms-grid-row: 3
+
+.contact
+  &__form
+    &-info
+      display: -ms-grid
+      -ms-grid-columns: 1fr 0 4fr
+      -ms-grid-rows: 1fr 15px 1fr 15px 1fr
+    &-label
+      &:nth-child(1)
+        display: block
+        -ms-grid-column: 1
+        -ms-grid-row: 1
+      &:nth-child(3)
+        display: block
+        -ms-grid-column: 1
+        -ms-grid-row: 3
+      &:nth-child(5)
+        display: block
+        -ms-grid-column: 1
+        -ms-grid-row: 5
+    &-input
+      &:nth-child(2)
+        display: block
+        -ms-grid-column: 3
+        -ms-grid-row: 1
+      &:nth-child(4)
+        display: block
+        -ms-grid-column: 3
+        -ms-grid-row: 3
+      &:nth-child(6)
+        display: block
+        -ms-grid-column: 3
+        -ms-grid-row: 5
+
+@media ( max-width: 1024px ) and ( min-width: 769px )
+  .equipment
+    &__container
+      -ms-grid-columns: 1fr 17px 2fr 17px 2fr
+      -ms-grid-rows: auto 17px auto 17px auto 17px auto 17px auto
+
+@media ( max-width: 768px ) and ( min-width: 481px )
+  .equipment
+    &__container
+      -ms-grid-columns: 1fr 15px 1fr
+      -ms-grid-rows: auto 15px auto 15px auto 15px auto 15px auto 15px auto 15px auto
+    &__img
+      &:nth-child(1)
+        -ms-grid-row: 3
+      &:nth-child(2)
+        -ms-grid-row: 5
+      &:nth-child(3)
+        -ms-grid-row: 7
+      &:nth-child(4)
+        -ms-grid-row: 9
+    &__list
+      &-1
+        -ms-grid-row: 3
+      &-2
+        -ms-grid-row: 5
+      &-3
+        -ms-grid-row: 7
+      &-4
+        -ms-grid-row: 9
+      &-5
+        -ms-grid-row: 11
+    &__header1
+      -ms-grid-column: 1
+      -ms-grid-row: 1
+      -ms-grid-column-span: 3
+    &__header2
+      -ms-grid-column: 1
+      -ms-grid-row: 13
+      -ms-grid-column-span: 3
+
+  .clients
+    &__container
+      -ms-grid-columns: 100%
+      -ms-grid-rows: 2fr 10px 1fr 10px 2fr 10px 1fr 10px 2fr 10px 1fr
+    &__img
+      &1
+        -ms-grid-column: 1
+        -ms-grid-row: 1
+        width: 224px
+      &2
+        -ms-grid-column: 1
+        -ms-grid-row: 5
+        width: 284px
+      &3
+        -ms-grid-column: 1
+        -ms-grid-row: 9
+        width: 160px
+    &__list
+      &1
+        -ms-grid-column: 1
+        -ms-grid-row: 3
+      &2
+        -ms-grid-column: 1
+        -ms-grid-row: 7
+      &3
+        -ms-grid-column: 1
+        -ms-grid-row: 11
+
+@media ( max-width: 480px ) and ( min-width: 300px )
+  .equipment
+    &__container
+      -ms-grid-columns: 30% 15px 70%
+      -ms-grid-rows: auto 15px auto 15px auto 15px auto 15px auto 15px auto 15px auto
+    &__img
+      &:nth-child(1)
+        -ms-grid-row: 3
+      &:nth-child(2)
+        -ms-grid-row: 5
+      &:nth-child(3)
+        -ms-grid-row: 7
+      &:nth-child(4)
+        -ms-grid-row: 9
+    &__list
+      &-1
+        -ms-grid-row: 3
+      &-2
+        -ms-grid-row: 5
+      &-3
+        -ms-grid-row: 7
+      &-4
+        -ms-grid-row: 9
+      &-5
+        -ms-grid-row: 11
+    &__header1
+      -ms-grid-column: 1
+      -ms-grid-row: 1
+      -ms-grid-column-span: 3
+    &__header2
+      -ms-grid-column: 1
+      -ms-grid-row: 13
+      -ms-grid-column-span: 3
+
+  .clients
+    &__container
+      -ms-grid-columns: 100%
+      -ms-grid-rows: 19% 18px 14% 18px 19% 18px 14% 18px 19% 18px 14%
+    &__img
+      &1
+        -ms-grid-column: 1
+        -ms-grid-row: 1
+        width: 182px
+      &2
+        -ms-grid-column: 1
+        -ms-grid-row: 5
+        width: 231px
+      &3
+        -ms-grid-column: 1
+        -ms-grid-row: 9
+        width: 130px
+    &__list
+      &1
+        -ms-grid-column: 1
+        -ms-grid-row: 3
+      &2
+        -ms-grid-column: 1
+        -ms-grid-row: 7
+      &3
+        -ms-grid-column: 1
+        -ms-grid-row: 11

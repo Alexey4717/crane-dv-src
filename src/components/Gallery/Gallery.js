@@ -21,7 +21,6 @@ export const GalleryContainer = (props) => {
 
   useEffect(() => {
     setProductionData()
-    console.log('production')
   }, []
   )
 

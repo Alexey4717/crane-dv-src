@@ -15,11 +15,19 @@ export const ScrollButton = () => {
   }
 
   // плавный scroll наверх
-  function toTop() {
+  /* function toTop() {
     window.scrollBy({
       top: -document.documentElement.scrollHeight,
       behavior: 'smooth'
     });
+  }; */
+
+  function toTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
   };
 
   return (

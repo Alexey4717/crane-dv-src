@@ -16,7 +16,7 @@ export const Main = () => {
       { layerNum: 'layer2', classImg: 'layer2__img', src: imgPath + "/crane2.png" },
       { layerNum: 'layer3', classImg: 'layer3__img', src: imgPath + "/crane3.png" }
     ],
-    equipments: [imgPath + "/balkansko.png", imgPath + "/SEW_LOGO.svg", imgPath + "/siemens.png", imgPath + "/Schneider-Electricl.png"],
+    equipments: [imgPath + "/balkansko.png", imgPath + "/SEW_LOGO.png", imgPath + "/siemens.png", imgPath + "/Schneider-Electricl.png"],
     clients: [imgPath + "/client1.png", imgPath + "/client2.png", imgPath + "/client3.png"],
     contactUs: [imgPath + "/contact-us.png", imgPath + "/crane4.png"]
   }
